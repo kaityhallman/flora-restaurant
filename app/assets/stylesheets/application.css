@@ -58,6 +58,13 @@
 
  }
 
+ h1
+ {
+ 	color: #18bc9c;
+ 	font-weight: bold;
+ 	letter-spacing: 2px;
+ }
+
  h3, h4 {
  	letter-spacing: 2px;
  }
