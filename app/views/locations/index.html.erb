@@ -1,8 +1,21 @@
-<p id="notice"><%= notice %></p>
+<h1>locations</h1>
+<div class="container-fluid">
+<div class="row"
+<% @locations.each do |location| %>
+  <div class="thumbnail"> 
+  <div class="caption">
+    <strong><%= location.street %></strong><p><%= location.city_state_zip %><br><%=location.phone %></p>
+    </div>
+    </div>
+    <% end %>
+    </div>
+</div>
 
-<h1>Listing Locations</h1>
+ 
 
-<table>
+
+
+<!-- <table>
   <thead>
     <tr>
       <th>Street</th>
@@ -24,8 +37,9 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
 
-<br>
-
-<%= link_to 'New Location', new_location_path %>
+<br> 
+<center>
+<%= link_to 'want a location in your area? give us a shout', new_location_path %>
+</center> 
