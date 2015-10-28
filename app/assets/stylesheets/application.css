@@ -39,13 +39,22 @@
 
  }
 
-.container {
-	padding: 30px;
-}
+ .container {
+ 	padding: 50px;
+ }
+
+
 
 .navbar-brand {
   font-weight: bold;
   font-size: 2.5em;
+}
+
+.thumbnail {
+	background-color: #070707;
+	padding: 15px 50px;
+	border: none;
+
 }
 
  body, h1, h2, h3, h4, h5, a, p {
