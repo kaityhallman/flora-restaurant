@@ -26,7 +26,8 @@
  	margin: 30px;
  	border: 1px solid #070707;
  	float: left;
- 	display: block;
+ 	display: inline;
+ 	max-width:100%;
 
  }
 
@@ -36,6 +37,7 @@
  	width: 320px;
  	border: 1px solid #070707;
  	opacity: 70%;
+ 	object-fit: cover;
 
  }
 
