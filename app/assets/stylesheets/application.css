@@ -97,3 +97,18 @@ padding: 6px;
 ul.nav, .navbar-nav {
 	float: right;
 }
+
+
+.btn-primary {
+   background-color: #000;
+   border: 1px solid #18bc9c;
+}
+
+.btn-primary a, a:visited {
+	color: #18bc9c;
+}
+
+.btn-primary:hover {
+	background-color: #18bc9c;
+	color: #fff;
+}
