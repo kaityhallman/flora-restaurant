@@ -14,8 +14,20 @@
  *= require_self
  */
 
+.navbar-brand {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+ body, h1 {
+ 	font-family: 'Helvetica', sans-serif;
+ }
+
 .navbar-default, .navbar-collapse {
 background-color: #551A8B;
 border-color: #551A8B;
 }
 
+ul.nav, .navbar-nav {
+	float: right;
+}
