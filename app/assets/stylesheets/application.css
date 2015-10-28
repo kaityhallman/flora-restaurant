@@ -18,10 +18,25 @@
  	background-image: url(https://amatolaadventure.files.wordpress.com/2012/05/flower1-copy.jpg);
  	background-repeat: no-repeat;
  	background-size: 100%;
+ 	margin: 0;
+ 	background-color: #070707;
+ }
+
+ img {
+
+ }
+
+ .home {
+ 	margin: 5px;
+ 	height: auto;
+ 	width: 320px;
+ 	border: 1px solid #070707;
+ 	opacity: 70%;
+
  }
 
 .container {
-	padding: 50px;
+	padding: 30px;
 }
 
 .navbar-brand {
