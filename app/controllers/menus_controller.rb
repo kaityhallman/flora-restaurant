@@ -4,6 +4,9 @@ class MenusController < ApplicationController
   def home
   end
 
+  def about 
+  end
+
   # GET /menus
   # GET /menus.json
   def index
