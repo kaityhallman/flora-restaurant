@@ -1,16 +1,20 @@
-<center><h1>entrées</h1><br>
-<div class="row">
-  <% @menus.each do |menu| %>
-    <div class="col-md-6 col-md-6">
-    <div class="thumbnail">
-    <h3><strong><%= menu.entree %></strong></h3>
-    <div class="caption">
-    <p><%= menu.description %></p>
-    <h5><strong>$<%= menu.price %></strong></h5>
+<h1>our menu</h1>
+
+    <div class="container">
+        <div class="row">
+                <% @menus.each do |menu| %>
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <h2><%= menu.entree %></h2>
+                            <br>
+                            <div class="caption">
+                                <%= image_tag menu.image, class: "resized" %>
+                                <br><br>
+                                <p><%= menu.description %></p>
+                                <h3>$<%= menu.price %></h3>
+                            </div>
+                        </div>
+                    </div>
+                <% end %>
+        </div>
     </div>
-    </div>
-    </div>
-    <% end %>
-    </div>
-<%= link_to 'suggest a new entrée', new_menu_path, class: "btn btn-primary" %>
-</center>

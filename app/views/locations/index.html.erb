@@ -1,54 +1,28 @@
 <h1>locations</h1>
-<div class="container-fluid">
-<div class="row"
-<% @locations.each do |location| %>
-  <div class="thumbnail"> 
-  <div class="caption">
-    <strong><%= location.street %></strong><p><%= location.city_state_zip %><br><%=location.phone %></p>
+  <center>
+    <div class="container">
+      <div class="row">
+        <% @locations.each do |location| %>
+          <div class="col-md-4">
+            <div class="thumbnail"> 
+              <div class="caption">
+                <strong><%= location.street %></strong><p><%= location.city_state_zip %><br><%=location.phone %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
+<br>
+    <div id="map-canvas">
     </div>
-    <% end %>
+
     </div>
-    <br>
-    <center>
-    <div class="map-container">
- <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zS6tST1pr_Qk.kz5qcGhukbns" width="1050" height="300"></iframe></div>
-     </center>
-</div>
+  </center>
 
 
-
- 
-
-
-
-<!-- <table>
-  <thead>
-    <tr>
-      <th>Street</th>
-      <th>City state zip</th>
-      <th>Phone</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @locations.each do |location| %>
-      <tr>
-        <td><%= location.street %></td>
-        <td><%= location.city_state_zip %></td>
-        <td><%= location.phone %></td>
-        <td><%= link_to 'Show', location %></td>
-        <td><%= link_to 'Edit', edit_location_path(location) %></td>
-        <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table> -->
-
-<br> 
+<!-- <br> 
 <center>
 <%= link_to 'want a location in your area? give us a shout', new_location_path, class: "btn btn-primary" %>
 </center> 
 <br>
-<br>
+<br> -->

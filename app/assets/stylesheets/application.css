@@ -14,42 +14,17 @@
  *= require_self
  */
 
- .map-container {
-position: relative;
-padding-bottom: 26.25%;
-padding-top: 30px;
-height: 0;
-overflow: hidden;
-}
- 
-.map-container iframe,
-.map-container object,
-.map-container embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+/* Maps */
+#map-canvas {
+  width: 100%;
+  height: 500px;
 }
 
+.marker {
+	color: black;
+}
 
- body {
- 	background-image: url(https://amatolaadventure.files.wordpress.com/2012/05/flower1-copy.jpg);
- 	background-repeat: no-repeat;
- 	background-size: 100%;
- 	margin: 0;
- 	background-color: #070707;
- }
-
- .about {
- 	margin: 30px;
- 	border: 1px solid #070707;
- 	float: left;
- 	display: inline;
- 	max-width:100%;
-
- }
-
+/* Image */
  .home {
  	margin: 5px;
  	height: auto;
@@ -60,43 +35,84 @@ height: 100%;
 
  }
 
- .container {
- 	padding: 50px;
- }
-
-
-
-.navbar-brand {
-  font-weight: bold;
-  font-size: 2.5em;
+.resized {
+	height:250px;
 }
 
+/* Columns */
 div[class^="col-"] {
     text-align: center;
 }
 
-.thumbnail {
-	background-color: #070707;
-	padding: 15px 50px;
-	border: none;
 
-}
-
- body, h1, h2, h3, h4, h5, a, p {
+/* Body */
+ body {
+ 	background-image: url(https://amatolaadventure.files.wordpress.com/2012/05/flower1-copy.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: 100%;
+ 	margin: 0;
+ 	background-color: #070707;
+ 	padding: 100px 0;
  	font-family: 'Helvetica', sans-serif;
  	color: #fff;
  }
 
- a:hover {
- background-color: none;
+/* Navbar */
+.navbar-default .navbar-brand {
+	  font-weight: bold;
+	  font-size: 2.5em;
+	  color: #18bc9c;
+}
 
+.navbar-default, .navbar-collapse {
+	background-color: #0d0d0d;
+	border-color: #0d0d0d;
+	padding: 10px;
+}
+
+ul.nav, .navbar-nav {
+	float: right;
+}
+
+
+
+/* About */
+.about {
+ 	padding: 20px 40px;
+ 	float: left;
+ 	display: inline;
+ 	max-width:100%;
  }
+
+/* Home */
+  .right {
+ 	float: right;
+ 	padding: 5% 8%;
+ 	text-align: right;
+ }
+
+
+/* Menu */
+
+.thumbnail {
+	background: rgba(7, 7, 7, 0.5);
+	border: none;
+}
+
+/* Heading + Links + Font Styling */
+
 
  h1
  {
  	color: #18bc9c;
  	font-weight: bold;
  	letter-spacing: 2px;
+ }
+
+ h2 {
+ 	color: #18bc9c;
+ 	font-size: 1.75em;
+ 	font-weight: bold;
  }
 
  h3, h4 {
@@ -107,16 +123,19 @@ div[class^="col-"] {
  	color: #18bc9c;
  }
 
-.navbar-default, .navbar-collapse {
-background-color: #0d0d0d;
-border-color: #0d0d0d;
-padding: 6px;
-}
+ p, h3, a, .navbar-default .navbar-nav>li>a {
+ 	color: #fff;
+ }
 
-ul.nav, .navbar-nav {
-	float: right;
-}
 
+a:hover {
+ background-color: none;
+text-decoration: none;
+font-weight: bold;
+ }
+
+
+/* Buttons */
 
 .btn-primary {
    background-color: #000;
