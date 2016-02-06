@@ -1,0 +1,153 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+/* Maps */
+
+#map-canvas {
+  width: 100%;
+  height: 500px;
+}
+
+.marker {
+	color: black;
+}
+
+/* Image */
+ .home {
+ 	margin: 5px;
+ 	height: auto;
+ 	width: 320px;
+ 	border: 1px solid #070707;
+ 	opacity: 70%;
+ 	object-fit: cover;
+
+ }
+
+.resized {
+	height:250px;
+}
+
+/* Columns */
+div[class^="col-"] {
+    text-align: center;
+}
+
+
+/* Body */
+ body {
+ 	background-image: url(https://amatolaadventure.files.wordpress.com/2012/05/flower1-copy.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: 100%;
+ 	margin: 0;
+ 	background-color: #070707;
+ 	padding: 100px 0;
+ 	font-family: 'Helvetica', sans-serif;
+ 	color: #fff;
+ }
+
+/* Navbar */
+.navbar-default .navbar-brand {
+	  font-weight: bold;
+	  font-size: 2.5em;
+	  color: #18bc9c;
+}
+
+.navbar-default, .navbar-collapse {
+	background-color: #0d0d0d;
+	border-color: #0d0d0d;
+	padding: 10px;
+}
+
+ul.nav, .navbar-nav {
+	float: right;
+}
+
+
+
+/* About */
+.about {
+ 	padding: 20px 40px;
+ 	float: left;
+ 	display: inline;
+ 	max-width:100%;
+ }
+
+/* Home */
+  .right {
+ 	float: right;
+ 	padding: 5% 8%;
+ 	text-align: right;
+ }
+
+
+/* Menu */
+
+.thumbnail {
+	background: rgba(7, 7, 7, 0.5);
+	border: none;
+}
+
+/* Heading + Links + Font Styling */
+
+
+ h1
+ {
+ 	color: #18bc9c;
+ 	font-weight: bold;
+ 	letter-spacing: 2px;
+ }
+
+ h2 {
+ 	color: #18bc9c;
+ 	font-size: 1.75em;
+ 	font-weight: bold;
+ }
+
+ h3, h4 {
+ 	letter-spacing: 2px;
+ }
+
+ strong {
+ 	color: #18bc9c;
+ }
+
+ p, h3, a, .navbar-default .navbar-nav>li>a {
+ 	color: #fff;
+ }
+
+
+a:hover {
+ background-color: none;
+text-decoration: none;
+font-weight: bold;
+ }
+
+
+/* Buttons */
+
+.btn-primary {
+   background-color: #000;
+   border: 1px solid #18bc9c;
+}
+
+.btn-primary a, a:visited {
+	color: #18bc9c;
+}
+
+.btn-primary:hover {
+	background-color: #18bc9c;
+	color: #fff;
+}
