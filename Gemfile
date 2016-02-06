@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'starter_generators'
 gem 'table_print'
+gem 'puma'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use SCSS for stylesheets
