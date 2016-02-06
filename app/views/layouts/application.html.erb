@@ -45,6 +45,15 @@
 
     <%= yield %>
   </div>
+
+  <footer class="container-fluid">
+  <p>&copy; Flora Restaurant</p>
+  <ul>
+    <li><%= link_to "Locations", locations_url %></li>
+    <li><%= link_to "Menu", menus_url %></li>
+    <li><%= link_to "About", about_url %></li>
+  </ul>
+</footer>
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag '//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js' %>
  <script type="text/javascript"
