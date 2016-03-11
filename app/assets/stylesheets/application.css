@@ -104,26 +104,26 @@ ul.nav, .navbar-nav {
 }
 
 /* Footer */
-footer {
+.footer {
 	background-color: #0d0d0d;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 }
 
-footer ul li {
+.footer ul li {
 	display: inline-block;
 	list-style: none;
 	padding: 2%;
 	float: right;
 }
 
-footer p {
+.footer p {
 	float: left;
 	padding: 2%;
 }
 
-footer a, footer p {
+.footer a, .footer p {
 	color: #fff;
 	vertical-align: middle;
 }
